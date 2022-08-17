@@ -1,7 +1,9 @@
 void main() {
 
     //Definindo uma variável
-    int a = 5;
+    int a,b;
+
+    a = 5
 
     //Imprimindo a variável "a"
     printf("%d", a);
@@ -17,6 +19,12 @@ void main() {
 
     //Concatenando
     printf("O valor da variável 'a' somado a 10 é: %d", a);
+
+    //Lendo um valor
+    scanf(%d, &b);
+
+    //Concatenando
+    printf("O valor da variável 'b' é: %d", b);
 
     //Imprimindo
     printf("\nUhuuu");
