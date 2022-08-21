@@ -1,4 +1,8 @@
-void main() {
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+int main(void){
 
     //Definindo uma variável
     int     vrv1;
