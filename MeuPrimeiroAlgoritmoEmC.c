@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdbool.h>
 
 int main(void){
 
@@ -21,21 +21,21 @@ int main(void){
 
     float   M, B, C1, D, F, G, H, I, J, Angulo, L1, L2, L3, brreal, reais, dolar, dolares, graufar, graucels, compras, imposto, dinheiro, juros, emprestimo, massa, altura, IMC, valor, nvalor, N22, N23, maior, vconversao, somadia, nota, mnota, malta, mbaixa, mediaesc, snota, peso, maispeso, RES;
 
-    unsigned int    EQ, ES, TRI;
+    bool    EQ, ES, TRI;
 
     //Definindo Vetores
-    int             vet: vetor[1..6];
-    char            nomealuno: vetor[1..4];
-    float           notateor: vetor[1..4];
-    float           notaprat: vetor[1..4];
-    float           median: vetor[1..4];
-    float           somamedia, mediatot;
-    int             mat: vetor[1..4, 1..4];
-    int             lin, col, op;
-    char            v: vetor[1..3, 1..3];
-    int             L, C, Cont, Po;
-    char            Simb;
-    unsigned int    R;
+    int     vet: vetor[1..6];
+    char    nomealuno: vetor[1..4];
+    float   notateor: vetor[1..4];
+    float   notaprat: vetor[1..4];
+    float   median: vetor[1..4];
+    float   somamedia, mediatot;
+    int     mat: vetor[1..4, 1..4];
+    int     lin, col, op;
+    char    v: vetor[1..3, 1..3];
+    int     L, C, Cont, Po;
+    char    Simb;
+    bool    R;
 
     //Definindo Procedimentos
     Procedimento PularAula()
