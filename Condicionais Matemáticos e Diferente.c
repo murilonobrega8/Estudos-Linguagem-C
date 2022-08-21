@@ -1,6 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
-//Função Principal do Programa
-void main() {
+int main(void){
 
     //Definindo variáveis
     int     vrv1, vrv2, vrv3;
