@@ -62,168 +62,168 @@ int main(void){
 
         }
 
-Procedimento Topo()
-Inicio
-   Escreval("---------------------------------------")
-   Escreval("D E T E C T O R   D E   +   P E S A D O")
-   Escreval
-   Escreval("     Maior Peso at� agora:",maispeso," kg. ")
-   Escreval("---------------------------------------")
-   Escreval
-FimProcedimento
+    Procedimento Topo()
+        Inicio
+            Escreval("---------------------------------------")
+            Escreval("D E T E C T O R   D E   +   P E S A D O")
+            Escreval
+            Escreval("     Maior Peso at� agora:",maispeso," kg. ")
+            Escreval("---------------------------------------")
+            Escreval
+    FimProcedimento
 
-Procedimento ParOUImpar(v: inteiro)
-Inicio
-   Se (v%2=0) entao
-      Escreval("O maior peso,",v," � um n�mero PAR!")
-   Senao
-      Escreval("O maior peso,",v," � n�mero �MPAR!")
-   FimSe
-FimProcedimento
+    Procedimento ParOUImpar(v: inteiro)
+        Inicio
+            Se (v%2=0) entao
+                Escreval("O maior peso,",v," � um n�mero PAR!")
+            Senao
+                Escreval("O maior peso,",v," � n�mero �MPAR!")
+            FimSe
+    FimProcedimento
 
-Procedimento Soma(var A, B: Inteiro)
-Inicio
-   A <- A + 100
-   B <- B + 10
-   Escreval("O novo valor de A �:",A,".")
-   Escreval
-   Escreval("O novo valor de B �:",B,".")
-   Escreval
-   Escreval("O soma de A+B �:",A+B,".")
-FimProcedimento
+    Procedimento Soma(var A, B: Inteiro)
+        Inicio
+            A <- A + 100
+            B <- B + 10
+            Escreval("O novo valor de A �:",A,".")
+            Escreval
+            Escreval("O novo valor de B �:",B,".")
+            Escreval
+            Escreval("O soma de A+B �:",A+B,".")
+    FimProcedimento
 
-Procedimento MostraMatriz()
-inicio
-   Para lin <- 1 ate 4 faca
-      Para col <- 1 ate 4 faca
-         Escreva(mat[lin,col]:4)
-      FimPara
-      EscrevaL()
-   FimPara
-FimProcedimento
+    Procedimento MostraMatriz()
+        inicio
+            Para lin <- 1 ate 4 faca
+                Para col <- 1 ate 4 faca
+                Escreva(mat[lin,col]:4)
+                FimPara
+            EscrevaL()
+            FimPara
+    FimProcedimento
 
-Procedimento DiagonalPrincipal()
-var t: inteiro
-inicio
-   Para lin <- 1 ate 4 faca
-      EscrevaL(mat[lin,lin]:4)
-      Para t <- 1 ate lin faca
-         Escreva("    ")
-      FimPara
-   FimPara
-FimProcedimento
+    Procedimento DiagonalPrincipal()
+        var t: inteiro
+        inicio
+            Para lin <- 1 ate 4 faca
+            EscrevaL(mat[lin,lin]:4)
+                Para t <- 1 ate lin faca
+                Escreva("    ")
+                FimPara
+            FimPara
+    FimProcedimento
 
-Procedimento TrianguloSuperior()
-var t: Inteiro
-inicio
-   Para lin <- 1 ate 3 faca
-      Escreva("    ")
-      Para c <- lin+1 ate 4 faca
-         Escreva(mat[lin,col]:4)
-      FimPara
-      EscrevaL()
-      Para t <- 1 ate lin faca
-         Escreva("    ")
-      FimPara
-   FimPara
-   EscrevaL()
-FimProcedimento
+    Procedimento TrianguloSuperior()
+        var t: Inteiro
+        inicio
+            Para lin <- 1 ate 3 faca
+            Escreva("    ")
+                Para c <- lin+1 ate 4 faca
+                Escreva(mat[lin,col]:4)
+                FimPara
+            EscrevaL()
+                Para t <- 1 ate lin faca
+                Escreva("    ")
+                FimPara
+            FimPara
+            EscrevaL()
+    FimProcedimento
 
-Procedimento TrianguloInferior()
-inicio
-   Para lin <- 2 ate 4 faca
-      EscrevaL()
-      Para c <- 1 ate lin-1 faca
-         Escreva(mat[lin,col]:4)
-      FimPara
-   FimPara
-   EscrevaL()
-FimProcedimento
+    Procedimento TrianguloInferior()
+        inicio
+            Para lin <- 2 ate 4 faca
+            EscrevaL()
+                Para c <- 1 ate lin-1 faca
+                Escreva(mat[lin,col]:4)
+                FimPara
+            FimPara
+            EscrevaL()
+    FimProcedimento
 
-Procedimento mostraVelha()
-Inicio
-   EscrevaL("+---+---+---+")
-   Para L <- 1 ate 3 faca
-      Para C <- 1 ate 3 faca
-         Escreva("|  ", v[L,C]:1)
-      FimPara
-      Escreva("|")
-      EscrevaL()
-      EscrevaL("+---+---+---+")
-   FimPara
-FimProcedimento
+    Procedimento mostraVelha()
+        Inicio
+            EscrevaL("+---+---+---+")
+            Para L <- 1 ate 3 faca
+                Para C <- 1 ate 3 faca
+                Escreva("|  ", v[L,C]:1)
+                FimPara
+            Escreva("|")
+            EscrevaL()
+            EscrevaL("+---+---+---+")
+            FimPara
+    FimProcedimento
 
-Procedimento mudaJogador()
-inicio
-   Se (Simb = "X") entao
-      Simb <- "O"
-   Senao
-      Simb <- "X"
-   FimSe
-FimProcedimento
+    Procedimento mudaJogador()
+        inicio
+        Se (Simb = "X") entao
+            Simb <- "O"
+        Senao
+            Simb <- "X"
+        FimSe
+    FimProcedimento
 
-Funcao Jogar(S: Caractere; P: Inteiro): Logico
-Var
-   mudou: logico
-inicio
-   mudou <- falso
-   Para L <- 1 ate 3 faca
-      Para C <- 1 ate 3 faca
-         Se(v[L,C] = NumpCarac(P)) entao
-            v[L,C] <- S
-            mudou <- verdadeiro
-         FimSe
-      FimPara
-   FimPara
-   Retorne mudou
-FimFuncao
+    Funcao Jogar(S: Caractere; P: Inteiro): Logico
+        Var
+        mudou: logico
+        inicio
+            mudou <- falso
+                Para L <- 1 ate 3 faca
+                    Para C <- 1 ate 3 faca
+                        Se(v[L,C] = NumpCarac(P)) entao
+                            v[L,C] <- S
+                            mudou <- verdadeiro
+                        FimSe
+                    FimPara
+                FimPara
+            Retorne mudou
+    FimFuncao
 
-Funcao TerminouVelha(): Logico
-Var
-   terminou: Logico
-   ocorr: Inteiro
-inicio
-   terminou <- falso
-   // Jogos em linha
-   Para L <- 1 ate 3 faca
-      Se (v[L,1] = v[L,2]) e (v[L,2] = v[L,3]) entao
-         terminou <- verdadeiro
-      FimSe
-   FimPara
-   // Jogos em coluna
-   Para C <- 1 ate 3 faca
-      Se (v[1,C] = v[2,C]) e (v[2,C] = v[3,C]) entao
-         terminou <- verdadeiro
-      FimSe
-   FimPara
-   // Jogos em diagonal
-   Se (v[1,1] = v[2,2]) e (v[2,2] = v[3,3]) entao
-      terminou <- verdadeiro
-   FimSe
-   Se (v[1,3] = v[2,2]) e (v[2,2] = v[3,1]) entao
-      terminou <- verdadeiro
-   FimSe
-   // Jogos em VELHA
-   ocorr <- 0
-   Para L <- 1 ate 3 faca
-      Para C <- 1 ate 3 faca
-         Se (v[L,C] <> "X") e (v[L,C] <> "O") entao
-            ocorr <- ocorr + 1
-         FimSe
-      FimPara
-   FimPara
-   Se (ocorr = 0) entao
-      terminou <- verdadeiro
-   FimSe
-   // Retorna se o jogo acabou ou nao
-   Retorne terminou
-FimFuncao
+    Funcao TerminouVelha(): Logico
+        Var
+        terminou: Logico
+        ocorr: Inteiro
+        inicio
+            terminou <- falso
+            // Jogos em linha
+            Para L <- 1 ate 3 faca
+                Se (v[L,1] = v[L,2]) e (v[L,2] = v[L,3]) entao
+                    terminou <- verdadeiro
+                FimSe
+            imPara
+            // Jogos em coluna
+            Para C <- 1 ate 3 faca
+                Se (v[1,C] = v[2,C]) e (v[2,C] = v[3,C]) entao
+                    terminou <- verdadeiro
+                FimSe
+            FimPara
+            // Jogos em diagonal
+                Se (v[1,1] = v[2,2]) e (v[2,2] = v[3,3]) entao
+                    terminou <- verdadeiro
+                FimSe
+                Se (v[1,3] = v[2,2]) e (v[2,2] = v[3,1]) entao
+                    terminou <- verdadeiro
+                FimSe
+            // Jogos em VELHA
+            ocorr <- 0
+                Para L <- 1 ate 3 faca
+                    Para C <- 1 ate 3 faca
+                        Se (v[L,C] <> "X") e (v[L,C] <> "O") entao
+                            ocorr <- ocorr + 1
+                        FimSe
+                    FimPara
+                FimPara
+                    Se (ocorr = 0) entao
+                        terminou <- verdadeiro
+                    FimSe
+            // Retorna se o jogo acabou ou nao
+            Retorne terminou
+        FimFuncao
 
-Funcao SomaTotal(A, B: Inteiro) : Inteiro
-Inicio
-   S <- A+B
-   Retorne S
-FimFuncao
+    Funcao SomaTotal(A, B: Inteiro) : Inteiro
+        Inicio
+            S <- A+B
+            Retorne S
+        FimFuncao
 
 Inicio
    EscrevaL()
